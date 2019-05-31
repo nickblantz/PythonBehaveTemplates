@@ -1,0 +1,29 @@
+language: python
+environments:
+    QA1:
+        env_type: QA  
+        stages:
+            - Smoke
+            - API
+    QA2:
+        env_type: QA  
+        stages:
+            - Smoke
+            - API
+    UAT1:
+        env_type: UAT 
+        stages:
+            - Smoke
+            - API
+default_parameter_values:
+    project: ''
+    environment: ''
+    repository: '' 
+    branch: ''
+    directory: ''
+email:
+    - user
+    - emailList
+    - user@markel.com
+    
+    
