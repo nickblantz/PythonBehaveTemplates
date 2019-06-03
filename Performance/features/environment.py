@@ -6,7 +6,9 @@ import os
 import yaml
 	
 def before_all(context):
-	context.word = os.environ['TEST_ENV']
+	context.word = os.environ.get('TEST_ENV')
+	if context.word == None:
+		context.word = "QA1"	#default value if no environments selected
 	context.config = yaml.load(open("features/config/"+context.word+".yml"), Loader=yaml.FullLoader)
 	
 
