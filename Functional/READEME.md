@@ -19,7 +19,11 @@
 	
 ## Environment Config
 To configure environment specific data, create a new <ENV_NAME>.yml file.  These represent an environment that you can specify at run time through TEST_ENV.  The default environment config file is QA1.yml
+
 	
+## Setup Instructions
+Setup this example project by first installing python and behave.  Clone the repo and then behave can be ran in either the 'Functional' or 'Performance' folder.
+
 	
 ## Support 
 [https://cucumber.io/docs/gherkin/reference](https://cucumber.io/docs/gherkin/reference)

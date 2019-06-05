@@ -1,10 +1,11 @@
-# -- FILE: features/environment.py
-# CONTAINS: Browser fixture setup and teardown
+#Author: Nick Thompson
+#This file is used to set up any envrionments necessary for any tests run
 from behave import fixture, use_fixture
 from fixtures.exampleFixture import test_fixture
 import os
 import yaml
 	
+#loads .yml file
 def before_all(context):
 	context.word = os.environ.get('TEST_ENV')
 	if context.word == None:
